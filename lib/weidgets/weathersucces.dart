@@ -99,6 +99,9 @@ class _HomeScreenState extends State<Weathersucces> {
                       weatherbyhour(),
                       SizedBox(height: 50,),
                       InkWell(
+                        onTap: (){
+                          Navigator.pop(context);
+                        },
                         child: Container(
                           height: 70,
                           width: MediaQuery.of(context).size.width,

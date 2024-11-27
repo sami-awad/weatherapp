@@ -30,6 +30,7 @@ class HomeScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       TextField(
+                        style: TextStyle(color: Colors.white),
                       onSubmitted: (value) {
                         cubit.fetchdata(city: value);
                         print(cubit.weatherModel.location);
@@ -43,6 +44,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                         );},
                       decoration: InputDecoration(
+                        counterStyle: TextStyle(color: Colors.white),
                         label: const Text('Search a city',style: TextStyle(color: Colors.white),),
                         suffixIcon: Icon(CupertinoIcons.search,color: Colors.white,),
                         border: OutlineInputBorder(
